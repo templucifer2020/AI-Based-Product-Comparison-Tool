@@ -1,0 +1,47 @@
+ProductInsight AI - Distribution Package Contents
+===============================================
+
+ESSENTIAL FILES TO INCLUDE IN ZIP:
+
+1. PROJECT CONFIGURATION
+   - package.json (contains all dependencies)
+   - package-lock.json (locks dependency versions)
+   - tsconfig.json (TypeScript configuration)
+   - vite.config.ts (Vite build configuration)
+   - tailwind.config.ts (CSS framework configuration)
+   - postcss.config.js (CSS processing configuration)
+   - drizzle.config.ts (Database configuration)
+
+2. SOURCE CODE
+   - server/ (entire folder - backend code)
+   - client/ (entire folder - frontend code)
+   - shared/ (entire folder - shared type definitions)
+
+3. SETUP FILES
+   - README.md (detailed setup instructions)
+   - SETUP_INSTRUCTIONS.txt (quick setup guide)
+   - .env.example (environment variables template)
+   - .gitignore (Git ignore rules)
+
+4. STARTUP SCRIPTS
+   - start.bat (Windows startup script)
+   - start.sh (Linux/Mac startup script)
+
+5. DOCUMENTATION
+   - replit.md (project architecture documentation)
+
+EXCLUDE FROM ZIP:
+- node_modules/ (users will install dependencies)
+- .env (contains secret keys)
+- dist/ (build output)
+- .git/ (version control)
+- Any log files
+- Cache directories
+
+TOTAL PACKAGE SIZE: ~50KB (without node_modules)
+
+USERS WILL NEED:
+- Node.js 18+ installed
+- Internet connection for npm install
+- Google AI API key (free from ai.google.dev)
+- Basic terminal/command prompt knowledge

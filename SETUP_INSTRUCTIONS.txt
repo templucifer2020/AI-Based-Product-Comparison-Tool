@@ -1,0 +1,55 @@
+ProductInsight AI - Local Setup Instructions
+============================================
+
+QUICK SETUP (5 minutes):
+
+1. EXTRACT FILES
+   - Extract all files from the zip to your desired folder
+   - Open terminal/command prompt in that folder
+
+2. INSTALL NODE.JS (if not installed)
+   - Download from: https://nodejs.org/
+   - Choose the LTS version (recommended)
+   - Restart your computer after installation
+
+3. INSTALL DEPENDENCIES
+   - In the project folder, run:
+     npm install
+   - This will download all required packages
+
+4. GET API KEY
+   - Visit: https://ai.google.dev/
+   - Sign in with Google account
+   - Create a new API key (free)
+   - Copy the API key
+
+5. CONFIGURE API KEY
+   - Copy the file ".env.example" and rename it to ".env"
+   - Open ".env" file in a text editor (Notepad, VS Code, etc.)
+   - Find the line: GEMINI_API_KEY=your_gemini_api_key_here
+   - Replace "your_gemini_api_key_here" with your actual API key
+   - Make sure there are no spaces around the = sign
+   - Save the file
+
+   Example:
+   GEMINI_API_KEY=AIzaSyC-YOUR-ACTUAL-API-KEY-HERE
+
+6. START THE APP
+   - In terminal, run: npm run dev
+   - Wait for "serving on port 5000" message
+   - Open browser to: http://localhost:5000
+
+THAT'S IT! Your app is now running locally.
+
+TESTING:
+- Try uploading a clear photo of a product label
+- The AI will analyze ingredients and provide safety information
+- You can compare multiple products side-by-side
+
+TROUBLESHOOTING:
+- If you get errors, make sure Node.js is properly installed
+- Check that your API key is correctly set in the .env file
+- Ensure your internet connection is working
+- Make sure port 5000 is not used by other applications
+
+For detailed help, see README.md file.
